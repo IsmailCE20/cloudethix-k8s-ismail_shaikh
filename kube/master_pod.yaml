@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-master
+  labels:
+    app: pod-master
+spec:
+  containers:
+  - name: nginx
+    image: ismailce20/cloudethix_master_nginx_ismail_shaikh:v1
+    ports:
+    - containerPort: 80

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-release
+  labels:
+    app: pod-release
+spec:
+  containers:
+  - name: release-nginx
+    image: ismailce20/cloudethix_release_nginx_ismail_shaikh:v1
+    ports:
+    - containerPort: 80
